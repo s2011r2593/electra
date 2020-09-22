@@ -1,5 +1,5 @@
-import { Simulator } from "powerplant";
-import { memory } from './node_modules/powerplant/powerplant_bg.wasm';
+import { Simulator } from 'powerplant';
+import { memory } from 'powerplant/powerplant_bg.wasm';
 
 const button = document.getElementById('toggle').onclick = () => {toggleA()};
 var isAnimating = true;
@@ -9,8 +9,8 @@ const toggleA = () => {
 
 const width = 96;
 const height = 40;
-const viscosity = 0.015;
-const u0 = 0.2
+const viscosity = 0.1;
+const u0 = 0.3
 const simulator = Simulator.new(width, height, viscosity, u0);
 
 const cSize = 8;

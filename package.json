@@ -33,6 +33,6 @@
     "copy-webpack-plugin": "^5.0.0"
   },
   "dependencies": {
-    "powerplant": "^0.2.0"
+    "powerplant": "^0.2.3"
   }
 }
