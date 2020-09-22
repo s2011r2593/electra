@@ -2,10 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Hello wasm-pack!</title>
+    <link rel="icon" href="./fav.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+    <title>Electra</title>
   </head>
-  <body>
+  <body style='margin: 0'>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+    <div style='width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;'>
+      <canvas id='canv'></canvas>
+      <button id='toggle' style='margin-top: 16px;'>toggle animation</button>
+    </div>
     <script src="./bootstrap.js"></script>
   </body>
 </html>
