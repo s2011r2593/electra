@@ -1,9 +1,9 @@
 import { Simulator } from "powerplant";
 import { memory } from './node_modules/powerplant/powerplant_bg.wasm';
 
-const button = document.getElementById('toggle').onclick = () => {toggleAnim()};
+const button = document.getElementById('toggle').onclick = () => {toggleA()};
 var isAnimating = true;
-const toggleAnim = () => {
+const toggleA = () => {
     isAnimating = !isAnimating;
 }
 
