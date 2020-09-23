@@ -1,5 +1,5 @@
-import { Simulator } from 'powerplant';
-import { memory } from 'powerplant/powerplant_bg';
+import { Simulator } from './node_modules/powerplant';
+import { memory } from './node_modules/powerplant/powerplant_bg';
 
 var isAnimating = false;
 const toggleA = () => {
