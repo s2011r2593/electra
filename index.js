@@ -1,5 +1,5 @@
 import { Simulator } from 'powerplant';
-import { memory } from 'powerplant/powerplant_bg.wasm';
+import { memory } from './powerplant_bg.wasm';
 
 var isAnimating = false;
 const toggleA = () => {
