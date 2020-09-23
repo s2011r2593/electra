@@ -2,15 +2,39 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="icon" href="./fav.png" />
+    <link rel="icon" href="./favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
     <title>Electra</title>
   </head>
-  <body style='margin: 0'>
+  <body style='margin: 0; background-color: #ebebeb'>
     <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
-    <div style='width: 100vw; height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center;'>
-      <canvas id='canv'></canvas>
-      <button id='toggle' style='margin-top: 16px;'>toggle animation</button>
+    <div style='width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;'>
+      <div style='display: flex; align-items: center; justify-content: center; flex-direction: column;'>
+        <canvas id='canv'></canvas>
+        <div style='margin-top: 16px; width: 100%; display: flex; justify-content: center;'>
+          <img src='board_edge.png' height='160px'/>
+          <img src='connector.png' height='160px' width='400px' />
+          <img src='board_edge.png' height='160px' style='transform: rotate(180deg);' />
+          <div style='position: absolute; align-self: center; width: 420px; display: flex; align-items: center; justify-content: space-around;'>
+            <div style='display: flex; flex-direction: column; justify-content: center; align-items: center'>
+              <p style='text-decoration: underline; font-family: Open Sans; line-height: 0px;'>
+                 Animation Toggle 
+              </p>
+              <img alt='click here' src='off.png' height='100px' id='flick'/>
+            </div>
+            <div style='display: flex; flex-direction: column; height: 160px; justify-content: center; align-items: center;'>
+              <p style='text-decoration: underline; font-family: Open Sans; line-height: 0px;'>
+                 FPS 
+              </p>
+              <div style='height: 100px; margin: 0; display: flex; justify-content: center; align-items: center; font-family: Open Sans;'>
+                <div id='speedometer' style='width: 64px; text-align: center; border: 2px solid #424242; border-radius: 4px; padding: 12px;'>
+                  0.00
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./bootstrap.js"></script>
   </body>
